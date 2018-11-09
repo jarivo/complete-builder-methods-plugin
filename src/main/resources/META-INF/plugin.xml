@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>be.jarivo.completebuildermethodsplugin</id>
+    <name>Complete builder methods plugin</name>
+    <version>1.0</version>
+
+    <idea-version since-build="182"/>
+
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <intentionAction>
+            <className>be.jarivo.completebuildermethodsplugin.CompleteBuilderMethodsIntention</className>
+            <category>Java/Other</category>
+            <descriptionDirectoryName>completebuildermethodsplugin</descriptionDirectoryName>
+        </intentionAction>
+    </extensions>
+
+    <project-components>
+        <component>
+            <implementation-class>be.jarivo.completebuildermethodsplugin.CompleteBuilderMethodsIntention</implementation-class>
+        </component>
+    </project-components>
+</idea-plugin>
